@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Explainer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon"><i class="fas fa-code"></i></div>
+            <div class="logo-text">Code<span>Explainer</span></div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="intro slide-in">
+            <h1>Transform Code into Clear Explanations</h1>
+            <p>Paste your code snippet, and our AI will provide a detailed explanation in plain English, breaking down complex logic into simple concepts.</p>
+        </div>
+        
+        <div class="code-container fade-in">
+            <div class="input-panel">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <i class="fas fa-file-code"></i>
+                        <span>Your Code</span>
+                    </div>
+                    <select class="language-selector" id="language-selector">
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="cpp">C++</option>
+                        <option value="csharp">C#</option>
+                        <option value="php">PHP</option>
+                        <option value="ruby">Ruby</option>
+                        <option value="go">Go</option>
+                        <option value="swift">Swift</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <textarea id="code-input" placeholder="// Paste your code here..."></textarea>
+                
+                <div class="code-actions">
+                    <button id="explain-btn" class="btn btn-primary">
+                        <i class="fas fa-magic"></i>
+                        <span>Explain Code</span>
+                    </button>
+                    <button id="clear-btn" class="btn btn-secondary">
+                        <i class="fas fa-eraser"></i>
+                        <span>Clear</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="output-panel">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Explanation</span>
+                    </div>
+                    <div class="tag">
+                        <span>AI Powered</span>
+                    </div>
+                </div>
+                
+                <div id="output-placeholder" class="output-placeholder">
+                    <i class="far fa-comments"></i>
+                    <p>Your explanation will appear here</p>
+                </div>
+                
+                <div id="loading" class="loading">
+                    <div class="loading-spinner"></div>
+                </div>
+                
+                <div id="output-content" class="output-content"></div>
+                
+                <div class="code-actions">
+                    <button id="copy-btn" class="btn btn-secondary" disabled>
+                        <i class="far fa-copy"></i>
+                        <span>Copy Explanation</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p class="footer-text">© 2025 CodeExplainer - Powered by Inzamam</p>
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>
